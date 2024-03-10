@@ -9,3 +9,4 @@ sudo apt install samba
 
 ### 配置
 
+配置文件是`/etc/samba/smb.conf`
