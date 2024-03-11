@@ -16,7 +16,7 @@
 
 6. [RunHiddenConsole](https://github.com/wenshui2008/RunHiddenConsole/releases/tag/1.0)
 
-   ![download](./guide/download.png)
+   ![download](./photo/download.png)
 
 ### Microsoft Visual C++ Redistributable Package
 
@@ -24,7 +24,7 @@
 
 直接同意并安装即可。
 
-![Microsoft Visual C++ Redistributable Package](./guide/VC++.png)
+![Microsoft Visual C++ Redistributable Package](./photo/VC++.png)
 
 ### MySQL
 
@@ -32,11 +32,11 @@
 
 打开安装包，选择`Server only`，后续默认继续即可
 
-![mysql-1](./guide/mysql-1.png)
+![mysql-1](./photo/mysql-1.png)
 
 输入的密码为数据库`root`管理用户的密码，<font color=red>请牢记</font>
 
-![mysql-2](./guide/mysql-2.png)
+![mysql-2](./photo/mysql-2.png)
 
 ### nginx
 
@@ -46,7 +46,7 @@
 
 浏览网址http://127.0.0.1/，出现以下内容则运行正常
 
-![nginx](./guide/nginx.png)
+![nginx](./photo/nginx.png)
 
 **停止nginx**
 
@@ -77,7 +77,7 @@ nginx.exe -s stop
 
 **最终`C:\server`文件夹有以下下内容**（位置只是根据个人偏好选择，任意位置都可以）
 
-![folder](./guide/folder.png)
+![folder](./photo/folder.png)
 
 ## 配置
 
@@ -87,7 +87,7 @@ nginx.exe -s stop
 
 在`开始`菜单中找到`MySQL 8.0 Command Line Client`
 
-![mysql-3](./guide/mysql-3.png)
+![mysql-3](./photo/mysql-3.png)
 
 输入刚才的`root`密码并回车，进入MySQL命令行，输入以下命令创建名为`wordpress`的数据库
 
@@ -224,13 +224,13 @@ start C:\server\nginx\nginx.exe
 C:\server\php\php-cgi.exe -b 127.0.0.1:9000 -c C:\server\php\php.ini
 ```
 
-![run nginx and php](./guide/run nginx and php.png)
+![run nginx and php](./photo/run nginx and php.png)
 
 注意：运行第二行之后会卡住不动，不要关闭窗口，保持即可。
 
 接下来在浏览器中访问`127.0.0.1`
 
-![wp-setup](./guide/wp-setup.png)
+![wp-setup](./photo/wp-setup.png)
 
 可以发现成功进入wordpress的`setup-config`页面，至此启动成功。
 
