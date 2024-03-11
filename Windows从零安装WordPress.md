@@ -79,7 +79,7 @@ nginx.exe -s stop
 
 在`开始`菜单中找到`MySQL 8.0 Command Line Client`
 
-![Screenshot 2024-03-11 at 12.29.27](/Users/hanzo/Library/Application Support/typora-user-images/Screenshot 2024-03-11 at 12.29.27.png)
+![mysql-3](./guide/mysql-3.png)
 
 输入刚才的`root`密码并回车，进入MySQL命令行，输入以下命令创建名为`wordpress`的数据库
 
@@ -216,13 +216,13 @@ start C:\server\nginx\nginx.exe
 C:\server\php\php-cgi.exe -b 127.0.0.1:9000 -c C:\server\php\php.ini
 ```
 
-![Screenshot 2024-03-11 at 14.53.12](/Users/hanzo/Library/Application Support/typora-user-images/Screenshot 2024-03-11 at 14.53.12.png)
+![run nginx and php](./guide/run nginx and php.png)
 
 注意：运行第二行之后会卡住不动，不要关闭窗口，保持即可。
 
 接下来在浏览器中访问`127.0.0.1`
 
-![Screenshot 2024-03-11 at 15.07.28](/Users/hanzo/Library/Application Support/typora-user-images/Screenshot 2024-03-11 at 15.07.28.png)
+![wp-setup](./guide/wp-setup.png)
 
 可以发现成功进入wordpress的`setup-config`页面，至此启动成功。
 
