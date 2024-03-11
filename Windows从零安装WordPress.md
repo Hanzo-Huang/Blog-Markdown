@@ -234,7 +234,7 @@ C:\server\php\php-cgi.exe -b 127.0.0.1:9000 -c C:\server\php\php.ini
 
 1. **start.bat**
 
-   ```bat
+   ```
    @echo off
    
    set PHP_FCGI_MAX_REQUESTS = 1000
@@ -258,7 +258,7 @@ C:\server\php\php-cgi.exe -b 127.0.0.1:9000 -c C:\server\php\php.ini
 
 2. **stop.bat**
 
-   ```bat
+   ```
    @echo off
    echo Stopping nginx...  
    taskkill /F /IM nginx.exe > nul
