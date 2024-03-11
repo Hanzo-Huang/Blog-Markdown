@@ -240,36 +240,36 @@ C:\server\php\php-cgi.exe -b 127.0.0.1:9000 -c C:\server\php\php.ini
 
 1. **start.bat**
 
-   ```bat
-   @echo off
-   
-   set PHP_FCGI_MAX_REQUESTS = 1000
-   
-   echo Starting PHP FastCGI...
-   
-   rem 替换为你的php-cgi.exe和php.ini的路径 ，后面的-b,-c等参数必须保留且注意前后空格
-   
-   RunHiddenConsole C:\server\php\php-cgi.exe -b 127.0.0.1:9000 -c C:\server\php\php.ini 
-   
-   echo Starting nginx...
-   
-   rem 填写nginx.exe实际位置
-   
-   RunHiddenConsole C:\server\nginx\nginx.exe
-   
-   exit
-   ```
-   
+```bat
+@echo off
+
+set PHP_FCGI_MAX_REQUESTS = 1000
+
+echo Starting PHP FastCGI...
+
+rem 替换为你的php-cgi.exe和php.ini的路径 ，后面的-b,-c等参数必须保留且注意前后空格
+
+RunHiddenConsole C:\server\php\php-cgi.exe -b 127.0.0.1:9000 -c C:\server\php\php.ini 
+
+echo Starting nginx...
+
+rem 填写nginx.exe实际位置
+
+RunHiddenConsole C:\server\nginx\nginx.exe
+
+exit
+```
+
 2. **stop.bat**
 
-   ```bat
-   @echo off
-   echo Stopping nginx...  
-   taskkill /F /IM nginx.exe > nul
-   echo Stopping PHP FastCGI...
-   taskkill /F /IM php-cgi.exe > nul
-   exit
-   ```
+```bat
+@echo off
+echo Stopping nginx...  
+taskkill /F /IM nginx.exe > nul
+echo Stopping PHP FastCGI...
+taskkill /F /IM php-cgi.exe > nul
+exit
+```
 
 
 双击运行`start.bat`和`stop.bat`便可以直接启动/停止nginx和php服务。
