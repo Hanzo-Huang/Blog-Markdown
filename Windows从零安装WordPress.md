@@ -176,36 +176,36 @@ nginx的配置文件是`nginx\conf`里的`nginx.conf`，可以用记事本打开
 
 1. 搜索`extension_dir`，找到第778行的内容
 
-   ```
-   ;extension_dir = "ext"
-   ```
+```
+;extension_dir = "ext"
+```
 
    删去最开始的`;`，将`ext`改为php中的真实路径
 
-   ```
-   extension_dir = "C:\server\php\ext"
-   ```
+```
+extension_dir = "C:\server\php\ext"
+```
 
 2. 搜索`cgi.fix_pathinfo`，找到第815行内容
 
-   ```
-   ;cgi.fix_pathinfo=1
-   ```
+```
+;cgi.fix_pathinfo=1
+```
 
    删去`;`
 
-   ```
-   cgi.fix_pathinfo=1
-   ```
+```
+cgi.fix_pathinfo=1
+```
 
 3. 添加扩展`php_mysqli.dll`
 
    因为配置文件中没有找到该项，于是我们自行添加至任意位置即可，为了方便管理，我放在`extension`项的末尾（第975行）。直接加入以下两行并保存
 
-   ```
-   ;mysql extension
-   extension=php_mysqli.dll
-   ```
+```
+;mysql extension
+extension=php_mysqli.dll
+```
 
 ### 4. 启动nginx和php
 
@@ -234,38 +234,38 @@ C:\server\php\php-cgi.exe -b 127.0.0.1:9000 -c C:\server\php\php.ini
 
 1. **start.bat**
 
-   ```
-   @echo off
-   
-   set PHP_FCGI_MAX_REQUESTS = 1000
-   
-   echo Starting PHP FastCGI...
-   
-   rem 下面这里的分别替换成你的php-cgi.exe和php.ini的路径 ，后面的-b,-c等参数必须保留且注意前后空格
-   
-   RunHiddenConsole E:\self\soft\php-7.2.11/php-cgi.exe -b 127.0.0.1:9001 -c E:\self\soft\php-7.2.11/php.ini 
-   
-   echo Starting nginx...
-   
-   rem 注意替换成你的nginx目录
-   
-   E:\self\soft\nginx-1.14.0/nginx.exe -p E:\self\soft\nginx-1.14.0/
-   
-   cd D:/webServer/nginx-1.5.2/
-   
-   pause
-   ```
+```
+@echo off
+
+set PHP_FCGI_MAX_REQUESTS = 1000
+
+echo Starting PHP FastCGI...
+
+rem 下面这里的分别替换成你的php-cgi.exe和php.ini的路径 ，后面的-b,-c等参数必须保留且注意前后空格
+
+RunHiddenConsole E:\self\soft\php-7.2.11/php-cgi.exe -b 127.0.0.1:9001 -c E:\self\soft\php-7.2.11/php.ini 
+
+echo Starting nginx...
+
+rem 注意替换成你的nginx目录
+
+E:\self\soft\nginx-1.14.0/nginx.exe -p E:\self\soft\nginx-1.14.0/
+
+cd D:/webServer/nginx-1.5.2/
+
+pause
+```
 
 2. **stop.bat**
 
-   ```
-   @echo off
-   echo Stopping nginx...  
-   taskkill /F /IM nginx.exe > nul
-   echo Stopping PHP FastCGI...
-   taskkill /F /IM php-cgi.exe > nul
-   exit
-   ```
+```bat
+@echo off
+echo Stopping nginx...  
+taskkill /F /IM nginx.exe > nul
+echo Stopping PHP FastCGI...
+taskkill /F /IM php-cgi.exe > nul
+exit
+```
 
    
 
