@@ -46,7 +46,7 @@
 
 直接将下载的安装包解压即可，我解压在`C:\server\nginx`，双击目录的`nginx.exe`即运行程序。
 
-浏览网址http://http://127.0.0.1/，出现以下内容则运行正常
+浏览网址[http://127.0.0.1](http://127.0.0.1)，出现以下内容则运行正常
 
 ![nginx](./lib/windows_wordpress/photo/nginx.png)
 
