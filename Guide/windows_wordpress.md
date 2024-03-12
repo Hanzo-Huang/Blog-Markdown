@@ -46,7 +46,7 @@
 
 直接将下载的安装包解压即可，我解压在`C:\server\nginx`，双击目录的`nginx.exe`即运行程序。
 
-浏览网址http://127.0.0.1/，出现以下内容则运行正常
+浏览网址http://http://127.0.0.1/，出现以下内容则运行正常
 
 ![nginx](./lib/windows_wordpress/photo/nginx.png)
 
@@ -123,7 +123,7 @@ nginx的配置文件是`nginx\conf`里的`nginx.conf`，可以用记事本打开
    ```
            location ~ \.php$ {
                root           C:/server/wordpress; # 设置为wordpress的位置
-               fastcgi_pass   127.0.0.1:9000;
+               fastcgi_pass   http://127.0.0.1:9000;
                fastcgi_index  index.php;
                fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
                include        fastcgi_params;
@@ -155,17 +155,17 @@ nginx的配置文件是`nginx\conf`里的`nginx.conf`，可以用记事本打开
             root   html;
         }
 
-        # proxy the PHP scripts to Apache listening on 127.0.0.1:80
+        # proxy the PHP scripts to Apache listening on http://127.0.0.1:80
         #
         #location ~ \.php$ {
-        #    proxy_pass   http://127.0.0.1;
+        #    proxy_pass   http://http://127.0.0.1;
         #}
 
-        # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
+        # pass the PHP scripts to FastCGI server listening on http://127.0.0.1:9000
         #
         location ~ \.php$ {
             root           C:/server/wordpress; # 设置为wordpress的位置
-            fastcgi_pass   127.0.0.1:9000;
+            fastcgi_pass   http://127.0.0.1:9000;
             fastcgi_index  index.php;
             fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name; # 修改为$document_root$fastcgi_script_name;
             include        fastcgi_params;
@@ -223,14 +223,14 @@ nginx的配置文件是`nginx\conf`里的`nginx.conf`，可以用记事本打开
 
 ```
 start C:\server\nginx\nginx.exe
-C:\server\php\php-cgi.exe -b 127.0.0.1:9000 -c C:\server\php\php.ini
+C:\server\php\php-cgi.exe -b http://127.0.0.1:9000 -c C:\server\php\php.ini
 ```
 
 ![run nginx and php](./lib/windows_wordpress/photo/run nginx and php.png)
 
 注意：运行第二行之后会卡住不动，不要关闭窗口，保持即可。
 
-接下来在浏览器中访问[127.0.0.1](127.0.0.1)
+接下来在浏览器中访问[http://127.0.0.1](http://127.0.0.1)
 
 ![wp-setup](./lib/windows_wordpress/photo/wp-setup.png)
 
@@ -251,7 +251,7 @@ echo Starting PHP FastCGI...
 
 rem 分别为php-cgi.exe和php.ini的路径 ，-b,-c等参数必须保留且注意前后空格
 
-RunHiddenConsole C:\server\php\php-cgi.exe -b 127.0.0.1:9000 -c C:\server\php\php.ini 
+RunHiddenConsole C:\server\php\php-cgi.exe -b http://127.0.0.1:9000 -c C:\server\php\php.ini 
 
 echo Starting nginx...
 
@@ -277,7 +277,7 @@ exit
 
 ### 3. 初始化WordPerss
 
-1. 浏览器访问[127.0.0.1](127.0.0.1)，进入之前看到的界面，点击`Let's go`
+1. 浏览器访问[http://127.0.0.1](http://127.0.0.1)，进入之前看到的界面，点击`Let's go`
 
 2. 填写选项:
 
@@ -317,11 +317,11 @@ exit
 
    ![wordpress_setup_4](./lib/windows_wordpress/photo/wordpress_setup_4.png)
    
-6. 访问WordPress主页：[127.0.0.1](127.0.0.1)
+6. 访问WordPress主页：[http://127.0.0.1](http://127.0.0.1)
 
    ![wordpress_setup_5](./lib/windows_wordpress/photo/wordpress_setup_5.png)
 
-7. 进入WordPress管理界面：[127.0.0.1/wp-admin](127.0.0.1/wp-admin)
+7. 进入WordPress管理界面：[http://127.0.0.1/wp-admin](http://127.0.0.1/wp-admin)
 
    先填写账号密码进行登录
 
