@@ -14,7 +14,7 @@
 
 4. [php](https://windows.php.net/download/)
 
-5. [WordPress](https://wordpress.org/download/)
+5. [WordPress](https://wordpress.org/download/) or [WordPress(CN)](https://cn.wordpress.org/download/) （如果需要中文版，直接从第二个网址进行下载。<font color=red>本教程以英文版为例，步骤一致，对应即可</font>）
 
 6. [RunHiddenConsole](https://github.com/wenshui2008/RunHiddenConsole/releases/tag/1.0)
 
@@ -230,7 +230,7 @@ C:\server\php\php-cgi.exe -b 127.0.0.1:9000 -c C:\server\php\php.ini
 
 注意：运行第二行之后会卡住不动，不要关闭窗口，保持即可。
 
-接下来在浏览器中访问`127.0.0.1`
+接下来在浏览器中访问[127.0.0.1](127.0.0.1)
 
 ![wp-setup](./lib/windows_wordpress/photo/wp-setup.png)
 
@@ -249,7 +249,7 @@ set PHP_FCGI_MAX_REQUESTS = 1000
 
 echo Starting PHP FastCGI...
 
-rem 替换为你的php-cgi.exe和php.ini的路径 ，后面的-b,-c等参数必须保留且注意前后空格
+rem 分别为php-cgi.exe和php.ini的路径 ，-b,-c等参数必须保留且注意前后空格
 
 RunHiddenConsole C:\server\php\php-cgi.exe -b 127.0.0.1:9000 -c C:\server\php\php.ini 
 
@@ -273,9 +273,66 @@ taskkill /F /IM php-cgi.exe > nul
 exit
 ```
 
-
 双击运行`start.bat`和`stop.bat`便可以直接启动/停止nginx和php服务。
+
+### 3. 初始化WordPerss
+
+1. 浏览器访问[127.0.0.1](127.0.0.1)，进入之前看到的界面，点击`Let's go`
+
+2. 填写选项:
+
+   `Database name`: wordpress（第一步：MySQL添加数据库中填写的数据库名称）
+
+   `Username`: root（管理员帐号，默认）
+
+   `Password`: 数据库用户密码（安装数据库时填写的密码）
+
+   `Database Host`: localhost（保持默认）
+
+   `Table Prefix`: wp_（保持默认）
+
+   ![wordpress_setup_1](./lib/windows_wordpress/photo/wordpress_setup_1.png)
+
+3. 点击`submit`，如果成功，则会出现以下页面，点击`Run the installation`继续安装；如果出现**Error**，说明填写有误，请仔细检查。
+
+   ![wordpress_setup_2](./lib/windows_wordpress/photo/wordpress_setup_2.png)
+
+4. 填写信息：
+
+   `Site Title`: 网站标题
+
+   `Username`: 网站管理用户名
+
+   `Password`: 密码<font color=red>（牢记）</font>
+
+   `Your Email`: 你的邮箱
+
+   `Search engine visibility`: 是否被搜索引擎发现（取决于搜索引擎是否遵守）
+
+   ![wordpress_setup_3](./lib/windows_wordpress/photo/wordpress_setup_3.png)
+
+   点击`Install WordPress`进入下一步
+
+5. 出现下面页面，说明网站设置成功。
+
+   ![wordpress_setup_4](./lib/windows_wordpress/photo/wordpress_setup_4.png)
+   
+6. 访问WordPress主页：[127.0.0.1](127.0.0.1)
+
+   ![wordpress_setup_5](./lib/windows_wordpress/photo/wordpress_setup_5.png)
+
+7. 进入WordPress管理界面：[127.0.0.1/wp-admin](127.0.0.1/wp-admin)
+
+   先填写账号密码进行登录
+
+   ![wordpress_setup_6](./lib/windows_wordpress/photo/wordpress_setup_6.png)
+
+   登录之后进入管理界面
+
+   ![wordpress_setup_7](./lib/windows_wordpress/photo/wordpress_setup_7.png)
 
 **Reference:**
 
 [windows下搭建nginx+php开发环境(by 苦逼成长印记)-cnblog](https://www.cnblogs.com/wwjchina/p/9804576.html)
+
+[如何更改Wordpress语言为中文(by 木鱼在游)-华为开发者联盟](https://huaweicloud.csdn.net/635665e1d3efff3090b5d33a.html?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Eactivity-1-114964681-blog-117536602.235%5Ev43%5Epc_blog_bottom_relevance_base7&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Eactivity-1-114964681-blog-117536602.235%5Ev43%5Epc_blog_bottom_relevance_base7&utm_relevant_index=2)
