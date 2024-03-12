@@ -333,6 +333,6 @@ exit
 
 **Reference:**
 
-[windows下搭建nginx+php开发环境(by 苦逼成长印记)-cnblog](https://www.cnblogs.com/wwjchina/p/9804576.html)
+* [windows下搭建nginx+php开发环境(by 苦逼成长印记)-cnblog](https://www.cnblogs.com/wwjchina/p/9804576.html)
 
-[如何更改Wordpress语言为中文(by 木鱼在游)-华为开发者联盟](https://huaweicloud.csdn.net/635665e1d3efff3090b5d33a.html?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Eactivity-1-114964681-blog-117536602.235%5Ev43%5Epc_blog_bottom_relevance_base7&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Eactivity-1-114964681-blog-117536602.235%5Ev43%5Epc_blog_bottom_relevance_base7&utm_relevant_index=2)
+* [如何更改Wordpress语言为中文(by 木鱼在游)-华为开发者联盟](https://huaweicloud.csdn.net/635665e1d3efff3090b5d33a.html?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Eactivity-1-114964681-blog-117536602.235%5Ev43%5Epc_blog_bottom_relevance_base7&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Eactivity-1-114964681-blog-117536602.235%5Ev43%5Epc_blog_bottom_relevance_base7&utm_relevant_index=2)
