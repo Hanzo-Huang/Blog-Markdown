@@ -18,7 +18,7 @@
 
 6. [RunHiddenConsole](https://github.com/wenshui2008/RunHiddenConsole/releases/tag/1.0)
 
-   ![download](./lib/windows_wordpress/photo/download.png)
+   ![download](./windows_wordpress.assets/download.png)
 
 ### Microsoft Visual C++ Redistributable Package
 
@@ -26,7 +26,7 @@
 
 直接同意并安装即可。
 
-![Microsoft Visual C++ Redistributable Package](./lib/windows_wordpress/photo/VC++.png)
+![VC++](./windows_wordpress.assets/VC++.png)
 
 ### MySQL
 
@@ -34,11 +34,11 @@
 
 打开安装包，选择`Server only`，后续默认继续即可
 
-![mysql-1](./lib/windows_wordpress/photo/mysql-1.png)
+![mysql-1](./windows_wordpress.assets/mysql-1.png)
 
 输入的密码为数据库`root`管理用户的密码，<font color=red>请牢记</font>
 
-![mysql-2](./lib/windows_wordpress/photo/mysql-2.png)
+![mysql-2](./windows_wordpress.assets/mysql-2.png)
 
 ### nginx
 
@@ -48,7 +48,7 @@
 
 浏览网址[http://127.0.0.1](http://127.0.0.1)，出现以下内容则运行正常
 
-![nginx](./lib/windows_wordpress/photo/nginx.png)
+![nginx](./windows_wordpress.assets/nginx.png)
 
 **停止nginx**
 
@@ -79,7 +79,7 @@ nginx.exe -s stop
 
 **最终`C:\server`文件夹有以下下内容**（位置只是根据个人偏好选择，任意位置都可以）
 
-![folder](./lib/windows_wordpress/photo/folder.png)
+![folder](./windows_wordpress.assets/folder.png)
 
 ## 配置
 
@@ -89,7 +89,7 @@ nginx.exe -s stop
 
 在`开始`菜单中找到`MySQL 8.0 Command Line Client`
 
-![mysql-3](./lib/windows_wordpress/photo/mysql-3.png)
+![mysql-3](./windows_wordpress.assets/mysql-3.png)
 
 输入刚才的`root`密码并回车，进入MySQL命令行，输入以下命令创建名为`wordpress`的数据库
 
@@ -226,13 +226,13 @@ start C:\server\nginx\nginx.exe
 C:\server\php\php-cgi.exe -b http://127.0.0.1:9000 -c C:\server\php\php.ini
 ```
 
-![run nginx and php](./lib/windows_wordpress/photo/run nginx and php.png)
+![run nginx and php](./windows_wordpress.assets/run nginx and php.png)
 
 注意：运行第二行之后会卡住不动，不要关闭窗口，保持即可。
 
 接下来在浏览器中访问[http://127.0.0.1](http://127.0.0.1)
 
-![wp-setup](./lib/windows_wordpress/photo/wp-setup.png)
+![wp-setup](./windows_wordpress.assets/wp-setup.png)
 
 可以发现成功进入wordpress的`setup-config`页面，至此启动成功。
 
@@ -291,11 +291,11 @@ exit
 
    `Table Prefix`: wp_（保持默认）
 
-   ![wordpress_setup_1](./lib/windows_wordpress/photo/wordpress_setup_1.png)
+   ![wordpress_setup_1](./windows_wordpress.assets/wordpress_setup_1.png)
 
 3. 点击`submit`，如果成功，则会出现以下页面，点击`Run the installation`继续安装；如果出现**Error**，说明填写有误，请仔细检查。
 
-   ![wordpress_setup_2](./lib/windows_wordpress/photo/wordpress_setup_2.png)
+   ![wordpress_setup_2](./windows_wordpress.assets/wordpress_setup_2.png)
 
 4. 填写信息：
 
@@ -309,27 +309,27 @@ exit
 
    `Search engine visibility`: 是否被搜索引擎发现（取决于搜索引擎是否遵守）
 
-   ![wordpress_setup_3](./lib/windows_wordpress/photo/wordpress_setup_3.png)
+   ![wordpress_setup_3](./windows_wordpress.assets/wordpress_setup_3.png)
 
    点击`Install WordPress`进入下一步
 
 5. 出现下面页面，说明网站设置成功。
 
-   ![wordpress_setup_4](./lib/windows_wordpress/photo/wordpress_setup_4.png)
+   ![wordpress_setup_4](./windows_wordpress.assets/wordpress_setup_4.png)
    
 6. 访问WordPress主页：[http://127.0.0.1](http://127.0.0.1)
 
-   ![wordpress_setup_5](./lib/windows_wordpress/photo/wordpress_setup_5.png)
+   ![wordpress_setup_5](./windows_wordpress.assets/wordpress_setup_5.png)
 
 7. 进入WordPress管理界面：[http://127.0.0.1/wp-admin](http://127.0.0.1/wp-admin)
 
    先填写账号密码进行登录
 
-   ![wordpress_setup_6](./lib/windows_wordpress/photo/wordpress_setup_6.png)
+   ![wordpress_setup_6](./windows_wordpress.assets/wordpress_setup_6.png)
 
    登录之后进入管理界面
 
-   ![wordpress_setup_7](./lib/windows_wordpress/photo/wordpress_setup_7.png)
+   ![wordpress_setup_7](./windows_wordpress.assets/wordpress_setup_7.png)
 
 **Reference:**
 
