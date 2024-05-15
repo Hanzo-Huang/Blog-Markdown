@@ -10,17 +10,17 @@
 
 插入硬盘/U盘后可以在左边发现，点击需要格式化的设备。
 
-![Screenshot 2024-05-15 at 19.16.09](./MacOS_parition_APFS&exFAT.assets/Screenshot 2024-05-15 at 19.16.09.png)
+![Screenshot 2024-05-15 at 19.16.09](./MacOS_parition_APFS_exFAT.assets/Screenshot 2024-05-15 at 19.16.09.png)
 
 ### 2. 抹掉硬盘
 
-![732459ad1b881bf7d584540a7da82591](./MacOS_parition_APFS&exFAT.assets/732459ad1b881bf7d584540a7da82591.png)
+![732459ad1b881bf7d584540a7da82591](./MacOS_parition_APFS_exFAT.assets/732459ad1b881bf7d584540a7da82591.png)
 
 
 
-在边栏中选择想要抹掉的储存设备，然后点按**抹掉**按钮  ![img](./MacOS_parition_APFS&exFAT.assets/e267c2a0f5ff6c9cccffb0fc511ab38a.png)。
+在边栏中选择想要抹掉的储存设备，然后点按**抹掉**按钮  ![img](./MacOS_parition_APFS_exFAT.assets/e267c2a0f5ff6c9cccffb0fc511ab38a.png)。
 
-![Screenshot 2024-05-15 at 19.23.24](./MacOS_parition_APFS&exFAT.assets/Screenshot 2024-05-15 at 19.23.24.png)
+![Screenshot 2024-05-15 at 19.23.24](./MacOS_parition_APFS_exFAT.assets/Screenshot 2024-05-15 at 19.23.24.png)
 
 * **名称**：自行填写。
 
@@ -34,9 +34,9 @@
 
 ### 3. 分区并格式化为ExFAT
 
-点按工具栏中的“分区”按钮 ![img](./MacOS_parition_APFS&exFAT.assets/5d768d3b050d45f1cab07bb1a4c59ea8.png)。
+点按工具栏中的“分区”按钮 ![img](./MacOS_parition_APFS_exFAT.assets/5d768d3b050d45f1cab07bb1a4c59ea8.png)。
 
-![0cfd8934688ebde64660796f9cf15b1a](./MacOS_parition_APFS&exFAT.assets/0cfd8934688ebde64660796f9cf15b1a.png)
+![0cfd8934688ebde64660796f9cf15b1a](./MacOS_parition_APFS_exFAT.assets/0cfd8934688ebde64660796f9cf15b1a.png)
 
 点按饼图下方的添加按钮 ![img](https://help.apple.com/assets/63FD50B6B945CD5D3F3A2AD3/63FD50B7B945CD5D3F3A2ADA/zh_CN/a2ef32e34a5573d192b10d340a4f46b1.png)，然后点按**添加分区**。
 
@@ -54,4 +54,4 @@
 
 成功分区后大致入下图所示。**APFS**仅在**MacOS**中使用，**ExFAT**在**MacOS**和**Windows**中均可使用。
 
-![Screenshot 2024-05-15 at 19.46.30](./MacOS_parition_APFS&exFAT.assets/Screenshot 2024-05-15 at 19.46.30.png)
+![Screenshot 2024-05-15 at 19.46.30](./MacOS_parition_APFS_exFAT.assets/Screenshot 2024-05-15 at 19.46.30.png)
