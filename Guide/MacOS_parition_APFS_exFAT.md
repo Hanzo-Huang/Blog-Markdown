@@ -18,7 +18,7 @@
 
 
 
-在边栏中选择想要抹掉的储存设备，然后点按**抹掉**按钮  ![img](./MacOS_parition_APFS_exFAT.assets/e267c2a0f5ff6c9cccffb0fc511ab38a.png)。
+在边栏中选择想要抹掉的储存设备，然后点按**抹掉**按钮  <img src="./MacOS_parition_APFS_exFAT.assets/e267c2a0f5ff6c9cccffb0fc511ab38a.png" alt="img" style="zoom:50%;" />。
 
 ![Screenshot 2024-05-15 at 19.23.24](./MacOS_parition_APFS_exFAT.assets/Screenshot 2024-05-15 at 19.23.24.png)
 
@@ -34,11 +34,11 @@
 
 ### 3. 分区并格式化为ExFAT
 
-点按工具栏中的“分区”按钮 ![img](./MacOS_parition_APFS_exFAT.assets/5d768d3b050d45f1cab07bb1a4c59ea8.png)。
+点按工具栏中的“分区”按钮 <img src="./MacOS_parition_APFS_exFAT.assets/5d768d3b050d45f1cab07bb1a4c59ea8.png" alt="img" style="zoom: 50%;" />。
 
 ![0cfd8934688ebde64660796f9cf15b1a](./MacOS_parition_APFS_exFAT.assets/0cfd8934688ebde64660796f9cf15b1a.png)
 
-点按饼图下方的添加按钮 ![img](https://help.apple.com/assets/63FD50B6B945CD5D3F3A2AD3/63FD50B7B945CD5D3F3A2ADA/zh_CN/a2ef32e34a5573d192b10d340a4f46b1.png)，然后点按**添加分区**。
+点按饼图下方的添加按钮 <img src="https://help.apple.com/assets/63FD50B6B945CD5D3F3A2AD3/63FD50B7B945CD5D3F3A2ADA/zh_CN/a2ef32e34a5573d192b10d340a4f46b1.png" alt="img" style="zoom:50%;" />，然后点按**添加分区**。
 
 *【注】*如果点按的是“添加宗卷”，你可以点按添加按钮以在容器中创建额外的 APFS 宗卷，或者点按“取消”以返回“磁盘工具”窗口而不对储存设备进行任何更改。
 
