@@ -4,7 +4,7 @@
 >
 > 不直接使用ExFAT是因为MacOS的文件系统有一个很大的优势
 
-### 1. 打开“磁盘工具”
+### **1. 打开“磁盘工具”**
 
 `⌘` + `␣`打开搜索，输入**磁盘工具**并打开应用。
 
@@ -12,7 +12,7 @@
 
 ![Screenshot 2024-05-15 at 19.16.09](./MacOS_parition_APFS_exFAT.assets/Screenshot 2024-05-15 at 19.16.09.png)
 
-### 2. 抹掉硬盘
+### **2. 抹掉硬盘**
 
 ![732459ad1b881bf7d584540a7da82591](./MacOS_parition_APFS_exFAT.assets/732459ad1b881bf7d584540a7da82591.png)
 
@@ -32,7 +32,7 @@
 
 **我们已经成功将硬盘/U盘抹掉成MacOS的APFS格式**
 
-### 3. 分区并格式化为ExFAT
+### **3. 分区并格式化为ExFAT**
 
 点按工具栏中的“分区”按钮 ![img](./MacOS_parition_APFS_exFAT.assets/5d768d3b050d45f1cab07bb1a4c59ea8.png)。
 
@@ -50,7 +50,7 @@
 
 点按**应用**，然后点按**分区**。
 
-### 完成分区
+### **4. 完成分区**
 
 成功分区后大致入下图所示。**APFS**仅在**MacOS**中使用，**ExFAT**在**MacOS**和**Windows**中均可使用。
 
